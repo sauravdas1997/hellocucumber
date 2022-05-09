@@ -4,6 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         echo "Resolving Dependencies"
+        sh "rvm use 2.7.5"
       }
     }
     stage('Run') {
