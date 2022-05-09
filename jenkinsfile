@@ -4,12 +4,12 @@ pipeline {
     stage('Build') {
       steps {
         echo "Resolving Dependencies"
-        sh "bundle install"
       }
     }
     stage('Run') {
       steps {
         echo "Running Cases"
+        sh "rake features"
       }
     }
   }
