@@ -9,6 +9,7 @@ def first_type(driver)
   meta_data = prod.find_element(:class, '_3pLy-c')
   prod_data = meta_data.find_element(:tag_name, :div).text.split("\n")
   prod_data[0]
+  
 end
 
 def second_type(driver)
