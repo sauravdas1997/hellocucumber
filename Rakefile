@@ -6,3 +6,4 @@ task :default => %w[features]
 Cucumber::Rake::Task.new(:features) do |t|
   t.cucumber_opts = '--format pretty'
 end
+# 
